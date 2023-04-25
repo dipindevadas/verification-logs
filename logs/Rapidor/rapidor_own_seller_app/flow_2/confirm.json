@@ -3,11 +3,11 @@
         "domain": "ONDC:RET10",
         "country": "IND",
         "city": "std:080",
-        "action": "on_confirm",
+        "action": "confirm",
         "core_version": "2.0.0",
-        "transaction_id": "5W0540nHQBwkVw28fPy98",
-        "message_id": "TmlwZ7xe1UwnlfaOiqy6r",
-        "timestamp": "2023-04-20T08:05:42.169Z",
+        "transaction_id": "06dBlqeLGbUkJ43uTdJnc",
+        "message_id": "xPCSlSALd-UGBmaiTYwcK",
+        "timestamp": "2023-04-23T14:12:56.976Z",
         "bap_id": "ondcpreprodb2b.rapidor.co",
         "bap_uri": "https://ondcpreprodb2b.rapidor.co/v1/ondc/buyer",
         "bpp_id": "ondcpreprodb2b.rapidor.co",
@@ -16,25 +16,6 @@
     },
     "message": {
         "order": {
-            "id": "RAP-0000343",
-            "provider": {
-                "id": "abadfoodslive",
-                "locations": [
-                    {
-                        "id": "L1"
-                    }
-                ],
-                "rateable": false
-            },
-            "items": [
-                {
-                    "id": "ITM05341",
-                    "fulfillment_id": "F1",
-                    "quantity": {
-                        "count": 2
-                    }
-                }
-            ],
             "billing": {
                 "name": "Signcatch Test Buyer",
                 "address": {
@@ -47,41 +28,13 @@
                     "country": "IND"
                 },
                 "phone": "7600554570",
-                "created_at": "2023-04-20T08:04:02.000Z",
-                "updated_at": "2023-04-20T08:04:02.000Z"
+                "created_at": "2023-04-23T14:12:15.000Z",
+                "updated_at": "2023-04-23T14:12:15.000Z"
             },
             "fulfillments": [
                 {
                     "id": "F1",
                     "type": "Delivery",
-                    "@ondc/org/provider_name": "",
-                    "tracking": false,
-                    "rateable": false,
-                    "state": {
-                        "descriptor": {
-                            "code": "Pending"
-                        }
-                    },
-                    "start": {
-                        "location": {
-                            "descriptor": {
-                                "images": [
-                                    "https://www.rapidor.co/wp-content/uploads/2023/02/Logo.svg"
-                                ],
-                                "name": "ABAD FOODS"
-                            },
-                            "gps": "12.971600,77.594600"
-                        },
-                        "time": {
-                            "range": {
-                                "start": "2023-04-20T08:05:42.195Z",
-                                "end": "2023-04-20T10:05:42.195Z"
-                            }
-                        },
-                        "contact": {
-                            "phone": "9072377660"
-                        }
-                    },
                     "end": {
                         "location": {
                             "address": {
@@ -95,18 +48,49 @@
                             },
                             "gps": "12.971599,77.594563"
                         },
-                        "time": {
-                            "range": {
-                                "start": "2023-04-22T08:05:42.195Z",
-                                "end": "2023-04-22T10:05:42.195Z"
-                            }
-                        },
                         "contact": {
                             "phone": "7600554570"
+                        },
+                        "person": {
+                            "name": "Bangalore"
                         }
+                    },
+                    "tracking": false
+                }
+            ],
+            "id": "RAP-0000352",
+            "state": "Created",
+            "provider": {
+                "id": "abadfoodslive",
+                "locations": [
+                    {
+                        "id": "L1"
+                    }
+                ]
+            },
+            "items": [
+                {
+                    "id": "ITM05341",
+                    "fulfillment_id": "F1",
+                    "quantity": {
+                        "count": 2
                     }
                 }
             ],
+            "payment": {
+                "uri": "",
+                "tl_method": "http/get",
+                "status": "NOT-PAID",
+                "type": "ON-FULFILLMENT",
+                "collected_by": "BAP",
+                "params": {
+                    "currency": "INR",
+                    "transaction_id": "_9cv5hGeYhiz6wOvPhUBh",
+                    "amount": "802.39"
+                },
+                "@ondc/org/buyer_app_finder_fee_type": "percent",
+                "@ondc/org/buyer_app_finder_fee_amount": "0"
+            },
             "quote": {
                 "breakup": [
                     {
@@ -134,6 +118,9 @@
                         "price": {
                             "currency": "INR",
                             "value": "85.97"
+                        },
+                        "@ondc/org/item_quantity": {
+                            "count": 0
                         }
                     },
                     {
@@ -142,6 +129,9 @@
                         "price": {
                             "currency": "INR",
                             "value": "0.00"
+                        },
+                        "@ondc/org/item_quantity": {
+                            "count": 0
                         }
                     }
                 ],
@@ -151,29 +141,8 @@
                 },
                 "ttl": "P2D"
             },
-            "payment": {
-                "uri": "",
-                "tl_method": "http/get",
-                "status": "NOT-PAID",
-                "type": "ON-FULFILLMENT",
-                "collected_by": "BAP",
-                "params": {
-                    "currency": "INR",
-                    "transaction_id": "9Qr1DQhLxfdUZw_1oOz1F",
-                    "amount": "802.39"
-                },
-                "@ondc/org/buyer_app_finder_fee_type": "percent",
-                "@ondc/org/buyer_app_finder_fee_amount": "0"
-            },
-            "state": "Created",
-            "documents": [
-                {
-                    "url": "https://ondcpreprodb2b.rapidor.co/static/pdf/RAP-0000343.pdf?v=1681977943",
-                    "label": "Order Note"
-                }
-            ],
-            "created_at": "2023-04-20T08:05:40.919Z",
-            "updated_at": "2023-04-20T08:05:42.169Z"
+            "created_at": "2023-04-23T14:12:56.980Z",
+            "updated_at": "2023-04-23T14:12:56.980Z"
         }
     }
 }
